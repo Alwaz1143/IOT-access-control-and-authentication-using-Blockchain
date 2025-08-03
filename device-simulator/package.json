@@ -1,0 +1,12 @@
+{
+  "name": "iot-device-simulator",
+  "version": "1.0.0",
+  "description": "IoT Device Simulator for Access Control System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo 'Device simulator not implemented yet'",
+    "start": "echo 'Device simulator not implemented yet'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,43 @@
+{
+  "name": "iot-access-control-system",
+  "version": "1.0.0",
+  "description": "Comprehensive IoT Access Control & Authentication System using Blockchain",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:simulator\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:simulator": "cd device-simulator && npm run dev",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "build": "npm run build:contracts && npm run build:backend && npm run build:frontend",
+    "build:contracts": "cd contracts && truffle compile",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "deploy:contracts": "cd contracts && truffle migrate --reset",
+    "test": "npm run test:contracts && npm run test:backend",
+    "test:contracts": "cd contracts && truffle test",
+    "test:backend": "cd backend && npm test",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../device-simulator && npm install",
+    "setup": "npm run install:all && npm run deploy:contracts",
+    "clean": "rm -rf node_modules backend/node_modules frontend/node_modules device-simulator/node_modules"
+  },
+  "keywords": [
+    "iot",
+    "blockchain",
+    "access-control",
+    "authentication",
+    "smart-contracts",
+    "ethereum",
+    "security"
+  ],
+  "author": "IoT Security Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+} 

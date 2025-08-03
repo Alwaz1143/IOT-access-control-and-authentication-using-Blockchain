@@ -1,0 +1,28 @@
+{
+  "name": "iot-access-control-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for IoT Access Control System",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "migrate:reset": "truffle migrate --reset",
+    "test": "truffle test",
+    "test:coverage": "truffle run coverage",
+    "deploy:local": "truffle migrate --network development",
+    "deploy:ganache": "truffle migrate --network ganache",
+    "console": "truffle console",
+    "verify": "truffle run verify"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "truffle": "^5.8.1",
+    "truffle-plugin-verify": "^0.6.3",
+    "solidity-coverage": "^0.8.5",
+    "ganache-cli": "^6.12.2"
+  }
+} 
