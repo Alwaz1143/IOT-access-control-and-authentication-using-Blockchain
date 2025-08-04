@@ -1,2 +1,41 @@
-node_modules
-_trash
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env*
+!.env.example
+
+# Logs & Coverage
+logs/
+*.log
+coverage/
+*.pid
+
+# Build Output
+dist/
+build/
+out/
+.cache/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Solidity build output
+build/
+artifacts/
+cache/
