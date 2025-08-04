@@ -13,8 +13,6 @@ const connectDB = async () => {
     const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/iot_access_control';
     
     const conn = await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
       maxPoolSize: 10,
       serverSelectionTimeoutMS: 5000,
       socketTimeoutMS: 45000,
@@ -41,7 +39,9 @@ const connectDB = async () => {
 
   } catch (error) {
     logger.error('MongoDB connection failed:', error);
-    process.exit(1);
+    // Don't exit process, allow graceful degradation
+    logger.warn('Continuing without database connection');
+    return false;
   }
 };
 

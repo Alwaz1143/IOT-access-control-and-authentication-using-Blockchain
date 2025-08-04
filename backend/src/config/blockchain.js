@@ -149,6 +149,12 @@ const getDefaultAccount = async () => {
 const sendTransaction = async (contract, method, params = [], options = {}) => {
   try {
     const account = await getDefaultAccount();
+    
+    // Check if contract has the method
+    if (!contract.methods || !contract.methods[method]) {
+      throw new Error(`Method ${method} not found on contract`);
+    }
+    
     const gasEstimate = await contract.methods[method](...params).estimateGas({ from: account });
     
     const transaction = {
@@ -178,6 +184,23 @@ const callMethod = async (contract, method, params = []) => {
   }
 };
 
+// Additional helper functions for specific contracts
+const getIoTAccessControl = () => {
+  return getContract('iotAccessControl');
+};
+
+const getAuditLogger = () => {
+  return getContract('auditLogger');
+};
+
+const getDeviceRegistry = () => {
+  return getContract('deviceRegistry');
+};
+
+const getPolicyManager = () => {
+  return getContract('policyManager');
+};
+
 module.exports = {
   setupWeb3,
   getWeb3,
@@ -186,5 +209,9 @@ module.exports = {
   getAccounts,
   getDefaultAccount,
   sendTransaction,
-  callMethod
+  callMethod,
+  getIoTAccessControl,
+  getAuditLogger,
+  getDeviceRegistry,
+  getPolicyManager
 }; 

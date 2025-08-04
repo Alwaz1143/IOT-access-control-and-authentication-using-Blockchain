@@ -119,4 +119,49 @@ logger.auditLog = (eventType, actor, subject, details) => {
   });
 };
 
+// Additional logger functions used in routes
+logger.accessRequest = (data) => {
+  logger.info(`Access Request: ${data.deviceId} -> ${data.userId} (${data.action})`, data);
+};
+
+logger.accessGrant = (data) => {
+  logger.info(`Access Grant: ${data.deviceId} -> ${data.userId}`, data);
+};
+
+logger.accessDenial = (data) => {
+  logger.warn(`Access Denial: ${data.deviceId} -> ${data.userId}`, data);
+};
+
+logger.accessRevocation = (data) => {
+  logger.warn(`Access Revocation: ${data.deviceId} -> ${data.userId}`, data);
+};
+
+logger.auditLogRetrieval = (data) => {
+  logger.info(`Audit Log Retrieval: ${data.requesterId}`, data);
+};
+
+logger.complianceReportGeneration = (data) => {
+  logger.info(`Compliance Report Generated: ${data.reportType}`, data);
+};
+
+logger.securityIncidentReport = (data) => {
+  logger.warn(`Security Incident Reported: ${data.incidentType}`, data);
+};
+
+logger.incidentStatusUpdate = (data) => {
+  logger.info(`Incident Status Updated: ${data.incidentId} -> ${data.status}`, data);
+};
+
+logger.dashboardAccess = (data) => {
+  logger.info(`Dashboard Accessed: ${data.userId}`, data);
+};
+
+logger.alertAcknowledgment = (data) => {
+  logger.info(`Alert Acknowledged: ${data.alertId} by ${data.acknowledgedBy}`, data);
+};
+
+logger.alertResolution = (data) => {
+  logger.info(`Alert Resolved: ${data.alertId} by ${data.resolvedBy}`, data);
+};
+
 module.exports = logger; 
