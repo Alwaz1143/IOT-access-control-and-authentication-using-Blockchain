@@ -642,3 +642,79 @@
 {"level":"info","message":"::1 - - [03/Aug/2025:15:48:41 +0000] \"GET /api/auth/register HTTP/1.1\" 404 55 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","timestamp":"2025-08-03T15:48:41.920Z"}
 {"level":"info","message":"::1 - - [03/Aug/2025:15:49:18 +0000] \"POST /api/auth/register HTTP/1.1\" 400 107 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768\"","timestamp":"2025-08-03T15:49:18.667Z"}
 {"level":"info","message":"SIGINT received, shutting down gracefully","timestamp":"2025-08-03T15:49:38.965Z"}
+{"level":"info","message":"MongoDB connected: localhost","timestamp":"2025-08-04T16:13:39.926Z"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2025-08-04T16:13:39.935Z"}
+{"level":"info","message":"Redis is ready","timestamp":"2025-08-04T16:13:39.940Z"}
+{"code":"ECONNREFUSED","errno":"ECONNREFUSED","level":"error","message":"Web3 setup failed: request to http://localhost:7545/ failed, reason: ","stack":"FetchError: request to http://localhost:7545/ failed, reason: \n    at ClientRequest.<anonymous> (D:\\CODING\\My Codes\\My Projects\\IOT access control and authentication using Blockchain\\backend\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:513:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:513:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-08-04T16:13:39.958Z","type":"system"}
+{"level":"warn","message":"Continuing without blockchain functionality","timestamp":"2025-08-04T16:13:39.959Z"}
+{"level":"info","message":"🚀 IoT Access Control API server running on port 8000","timestamp":"2025-08-04T16:13:40.031Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:8000/api-docs","timestamp":"2025-08-04T16:13:40.031Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:8000/health","timestamp":"2025-08-04T16:13:40.031Z"}
+{"level":"info","message":"MQTT client connected successfully","timestamp":"2025-08-04T16:13:40.045Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/status","timestamp":"2025-08-04T16:13:40.051Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/data","timestamp":"2025-08-04T16:13:40.051Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/access","timestamp":"2025-08-04T16:13:40.051Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/alerts","timestamp":"2025-08-04T16:13:40.051Z"}
+{"level":"info","message":"Subscribed to iot/policies/+/updates","timestamp":"2025-08-04T16:13:40.051Z"}
+{"level":"info","message":"Subscribed to iot/audit/+/events","timestamp":"2025-08-04T16:13:40.051Z"}
+{"level":"info","message":"::1 - - [04/Aug/2025:16:13:44 +0000] \"GET /health HTTP/1.1\" 200 101 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768\"","timestamp":"2025-08-04T16:13:44.525Z"}
+{"level":"info","message":"MongoDB connected: localhost","timestamp":"2025-08-04T16:14:00.074Z"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2025-08-04T16:14:00.084Z"}
+{"level":"info","message":"Redis is ready","timestamp":"2025-08-04T16:14:00.086Z"}
+{"code":"ECONNREFUSED","errno":"ECONNREFUSED","level":"error","message":"Web3 setup failed: request to http://localhost:7545/ failed, reason: ","stack":"FetchError: request to http://localhost:7545/ failed, reason: \n    at ClientRequest.<anonymous> (D:\\CODING\\My Codes\\My Projects\\IOT access control and authentication using Blockchain\\backend\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:513:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:513:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-08-04T16:14:00.102Z","type":"system"}
+{"level":"info","message":"::1 - - [04/Aug/2025:16:31:04 +0000] \"GET /health HTTP/1.1\" 200 104 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768\"","timestamp":"2025-08-04T16:31:04.585Z"}
+{"level":"info","message":"::1 - - [04/Aug/2025:16:34:51 +0000] \"GET /health HTTP/1.1\" 200 103 \"-\" \"axios/1.11.0\"","timestamp":"2025-08-04T16:34:51.194Z"}
+{"level":"info","message":"::1 - - [04/Aug/2025:16:34:51 +0000] \"GET /api/devices HTTP/1.1\" 401 42 \"-\" \"axios/1.11.0\"","timestamp":"2025-08-04T16:34:51.204Z"}
+{"level":"info","message":"MongoDB connected: localhost","timestamp":"2025-08-04T16:44:53.503Z"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2025-08-04T16:44:53.513Z"}
+{"level":"info","message":"Redis is ready","timestamp":"2025-08-04T16:44:53.515Z"}
+{"code":"ECONNREFUSED","errno":"ECONNREFUSED","level":"error","message":"Web3 setup failed: request to http://localhost:7545/ failed, reason: ","stack":"FetchError: request to http://localhost:7545/ failed, reason: \n    at ClientRequest.<anonymous> (D:\\CODING\\My Codes\\My Projects\\IOT access control and authentication using Blockchain\\backend\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:513:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:513:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-08-04T16:44:53.529Z","type":"system"}
+{"level":"warn","message":"Continuing without blockchain functionality","timestamp":"2025-08-04T16:44:53.529Z"}
+{"level":"info","message":"🚀 IoT Access Control API server running on port 8000","timestamp":"2025-08-04T16:44:53.588Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:8000/api-docs","timestamp":"2025-08-04T16:44:53.588Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:8000/health","timestamp":"2025-08-04T16:44:53.589Z"}
+{"level":"info","message":"MQTT client connected successfully","timestamp":"2025-08-04T16:44:53.602Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/status","timestamp":"2025-08-04T16:44:53.606Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/data","timestamp":"2025-08-04T16:44:53.606Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/access","timestamp":"2025-08-04T16:44:53.606Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/alerts","timestamp":"2025-08-04T16:44:53.606Z"}
+{"level":"info","message":"Subscribed to iot/policies/+/updates","timestamp":"2025-08-04T16:44:53.606Z"}
+{"level":"info","message":"Subscribed to iot/audit/+/events","timestamp":"2025-08-04T16:44:53.606Z"}
+{"level":"info","message":"MongoDB connected: localhost","timestamp":"2025-08-04T16:44:57.922Z"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2025-08-04T16:44:57.931Z"}
+{"level":"info","message":"Redis is ready","timestamp":"2025-08-04T16:44:57.933Z"}
+{"code":"ECONNREFUSED","errno":"ECONNREFUSED","level":"error","message":"Web3 setup failed: request to http://localhost:7545/ failed, reason: ","stack":"FetchError: request to http://localhost:7545/ failed, reason: \n    at ClientRequest.<anonymous> (D:\\CODING\\My Codes\\My Projects\\IOT access control and authentication using Blockchain\\backend\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:513:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:513:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-08-04T16:44:57.948Z","type":"system"}
+{"level":"warn","message":"Continuing without blockchain functionality","timestamp":"2025-08-04T16:44:57.948Z"}
+{"level":"info","message":"🚀 IoT Access Control API server running on port 8000","timestamp":"2025-08-04T16:44:57.988Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:8000/api-docs","timestamp":"2025-08-04T16:44:57.988Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:8000/health","timestamp":"2025-08-04T16:44:57.988Z"}
+{"level":"info","message":"MQTT client connected successfully","timestamp":"2025-08-04T16:44:57.997Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/status","timestamp":"2025-08-04T16:44:58.005Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/data","timestamp":"2025-08-04T16:44:58.005Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/access","timestamp":"2025-08-04T16:44:58.005Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/alerts","timestamp":"2025-08-04T16:44:58.005Z"}
+{"level":"info","message":"Subscribed to iot/policies/+/updates","timestamp":"2025-08-04T16:44:58.005Z"}
+{"level":"info","message":"Subscribed to iot/audit/+/events","timestamp":"2025-08-04T16:44:58.005Z"}
+{"level":"info","message":"MongoDB connected: localhost","timestamp":"2025-08-09T10:22:51.164Z"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2025-08-09T10:22:51.172Z"}
+{"level":"info","message":"Redis is ready","timestamp":"2025-08-09T10:22:51.177Z"}
+{"code":"ECONNREFUSED","errno":"ECONNREFUSED","level":"error","message":"Web3 setup failed: request to http://localhost:7545/ failed, reason: connect ECONNREFUSED ::1:7545","stack":"FetchError: request to http://localhost:7545/ failed, reason: connect ECONNREFUSED ::1:7545\n    at ClientRequest.<anonymous> (D:\\CODING\\My Codes\\My Projects\\IOT access control and authentication using Blockchain\\backend\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:517:28)\n    at Socket.socketErrorListener (node:_http_client:501:9)\n    at Socket.emit (node:events:517:28)\n    at emitErrorNT (node:internal/streams/destroy:151:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2025-08-09T10:22:51.195Z","type":"system"}
+{"level":"warn","message":"Continuing without blockchain functionality","timestamp":"2025-08-09T10:22:51.196Z"}
+{"level":"info","message":"🚀 IoT Access Control API server running on port 8000","timestamp":"2025-08-09T10:22:51.710Z"}
+{"level":"info","message":"📚 API Documentation available at http://localhost:8000/api-docs","timestamp":"2025-08-09T10:22:51.711Z"}
+{"level":"info","message":"🏥 Health check available at http://localhost:8000/health","timestamp":"2025-08-09T10:22:51.711Z"}
+{"level":"info","message":"MQTT client connected successfully","timestamp":"2025-08-09T10:22:51.721Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/status","timestamp":"2025-08-09T10:22:51.728Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/data","timestamp":"2025-08-09T10:22:51.729Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/access","timestamp":"2025-08-09T10:22:51.729Z"}
+{"level":"info","message":"Subscribed to iot/devices/+/alerts","timestamp":"2025-08-09T10:22:51.729Z"}
+{"level":"info","message":"Subscribed to iot/policies/+/updates","timestamp":"2025-08-09T10:22:51.729Z"}
+{"level":"info","message":"Subscribed to iot/audit/+/events","timestamp":"2025-08-09T10:22:51.729Z"}
+{"level":"info","message":"MongoDB connected: localhost","timestamp":"2025-08-09T11:26:31.792Z"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2025-08-09T11:26:31.824Z"}
+{"level":"info","message":"Redis is ready","timestamp":"2025-08-09T11:26:31.830Z"}
+{"code":"ECONNREFUSED","errno":"ECONNREFUSED","level":"error","message":"Web3 setup failed: request to http://localhost:7545/ failed, reason: connect ECONNREFUSED ::1:7545","stack":"FetchError: request to http://localhost:7545/ failed, reason: connect ECONNREFUSED ::1:7545\n    at ClientRequest.<anonymous> (D:\\CODING\\My Codes\\My Projects\\IOT access control and authentication using Blockchain\\backend\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:517:28)\n    at Socket.socketErrorListener (node:_http_client:501:9)\n    at Socket.emit (node:events:517:28)\n    at emitErrorNT (node:internal/streams/destroy:151:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2025-08-09T11:26:31.879Z","type":"system"}
+{"level":"info","message":"::1 - - [09/Aug/2025:11:26:36 +0000] \"POST /api/auth/register HTTP/1.1\" 400 207 \"http://localhost:3000/login\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-09T11:26:36.503Z"}
+{"level":"info","message":"::1 - - [09/Aug/2025:11:26:46 +0000] \"POST /api/auth/register HTTP/1.1\" 400 207 \"http://localhost:3000/login\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-09T11:26:46.114Z"}
+{"level":"info","message":"::1 - - [09/Aug/2025:11:27:00 +0000] \"POST /api/auth/register HTTP/1.1\" 400 207 \"http://localhost:3000/login\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-09T11:27:00.442Z"}
+{"level":"info","message":"::1 - - [09/Aug/2025:11:27:56 +0000] \"POST /api/auth/register HTTP/1.1\" 400 207 \"http://localhost:3000/login\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-09T11:27:56.069Z"}

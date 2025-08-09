@@ -27,6 +27,7 @@ Thumbs.db
 # IDEs and Editors
 .vscode/
 .idea/
+.cursorignore
 
 # Python
 __pycache__/
@@ -39,3 +40,4 @@ venv/
 build/
 artifacts/
 cache/
+

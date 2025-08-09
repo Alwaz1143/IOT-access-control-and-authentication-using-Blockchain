@@ -6,16 +6,20 @@ module.exports = {
     development: {
       host: "127.0.0.1",
       port: 7545,
-      network_id: "*",
+      network_id: "5777",
       gas: 6721975,
-      gasPrice: 20000000000
+      gasPrice: 20000000000,
+      timeoutBlocks: 200,
+      skipDryRun: true
     },
     ganache: {
       host: "127.0.0.1",
       port: 7545,
-      network_id: "*",
+      network_id: "5777",
       gas: 6721975,
-      gasPrice: 20000000000
+      gasPrice: 20000000000,
+      timeoutBlocks: 200,
+      skipDryRun: true
     },
     test: {
       host: "127.0.0.1",
@@ -42,5 +46,8 @@ module.exports = {
   ],
   api_keys: {
     etherscan: process.env.ETHERSCAN_API_KEY
+  },
+  mocha: {
+    timeout: 100000
   }
 }; 

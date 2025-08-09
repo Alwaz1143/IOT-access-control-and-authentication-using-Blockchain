@@ -5,6 +5,12 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { Toaster } from 'react-hot-toast'
 import App from './App'
 import './index.css'
+import { Buffer } from 'buffer'
+import process from 'process'
+
+// Polyfill global variables
+window.Buffer = Buffer
+window.process = process
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -33,4 +39,4 @@ createRoot(document.getElementById('root')!).render(
       </BrowserRouter>
     </QueryClientProvider>
   </StrictMode>,
-) 
+)

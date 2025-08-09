@@ -189,7 +189,7 @@ export default function Audit() {
           View audit logs and compliance reports
         </p>
       </div>
-
+      
       {/* Tabs */}
       <div className="border-b border-gray-200">
         <nav className="-mb-px flex space-x-8">
@@ -704,8 +704,8 @@ export default function Audit() {
                 </button>
               </div>
             </div>
-          </div>
         </div>
+      </div>
       )}
     </div>
   )

@@ -249,7 +249,7 @@ export default function Access() {
           Manage access requests and permissions
         </p>
       </div>
-
+      
       {/* Tabs */}
       <div className="border-b border-gray-200">
         <nav className="-mb-px flex space-x-8">
